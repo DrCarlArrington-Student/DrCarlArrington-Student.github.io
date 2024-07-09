@@ -5,7 +5,23 @@
   <body>
     <center>
       <h1>Input Demo</h1>
+      <p>Enter Text: </p>
+      <input type="text" placeholder="Enter Text" id="input">
+      <button onclick="getInput()">Click Here</button>
+      <p id="output"></p>
       <a href="index.html">Click here to go home</a>
+      <script>
+        function getInput()
+          {
+            let input = document.getElementById("input").value;
+
+            console.log(input);
+
+            alert(input);
+
+            document.getElementById("output").innerHTML = "You entered: " + input;
+          }
+      </script>
     </center>
   </body>
 </html>
